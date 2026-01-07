@@ -1,9 +1,14 @@
 "use client";
 
-import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
-import Link from 'next/link';
 import Section from '@/components/Section';
+import Image from 'next/image';
+import HeroImage from '../../../public/images/profile1.jpeg';
+import Profile2 from '../../../public/images/profile3.jpeg';
+import Profile3 from '../../../public/images/profile2.jpeg';
+import Profile4 from '../../../public/images/profile4.jpeg';
+import Profile5 from '../../../public/images/profile5.jpeg';
+import Profile6 from '../../../public/images/profile6.jpeg';
 
 const AboutPage = () => {
     return (
@@ -12,12 +17,16 @@ const AboutPage = () => {
 
                 {/* Intro Section */}
                 <div className="flex flex-col lg:flex-row gap-12 items-center mb-24">
-                    {/* Photo Placeholder */}
                     <div className="w-full lg:w-1/2 flex justify-center">
                         <div className="relative w-80 h-80 md:w-96 md:h-96">
                             <div className="absolute inset-0 border-2 border-primary/30 rounded-full animate-spin-slow"></div>
                             <div className="absolute inset-4 bg-gray-800 rounded-full overflow-hidden border-4 border-white/10 flex items-center justify-center bg-gradient-to-br from-gray-800 to-black">
-                                <span className="text-gray-500 font-medium">Add Photo Here</span>
+                                <Image
+                                    src={HeroImage}
+                                    alt='hero_image'
+                                    fill
+                                    className="object-cover"
+                                />
                                 {/* User should replace this div with: <img src="/path/to/photo.jpg" alt="Profile" className="w-full h-full object-cover" /> */}
                             </div>
                             {/* Decorative Elements */}
@@ -63,10 +72,52 @@ const AboutPage = () => {
                 {/* Gallery Grid (Placeholder) */}
                 <Section id="gallery" title="Snapshots" subtitle="A glimpse into my life outside of code.">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-96">
-                        <div className="glass-card rounded-2xl col-span-2 row-span-2 flex items-center justify-center text-gray-600 font-bold text-xl hover:bg-white/5 transition-colors">Photo 1</div>
-                        <div className="glass-card rounded-2xl flex items-center justify-center text-gray-600 font-bold hover:bg-white/5 transition-colors">Photo 2</div>
-                        <div className="glass-card rounded-2xl flex items-center justify-center text-gray-600 font-bold hover:bg-white/5 transition-colors">Photo 3</div>
-                        <div className="glass-card rounded-2xl col-span-2 flex items-center justify-center text-gray-600 font-bold hover:bg-white/5 transition-colors">Photo 4</div>
+                        {/* Large Main Photo */}
+                        <div className="glass-card rounded-2xl col-span-2 row-span-2 relative overflow-hidden group">
+                            <Image
+                                src={Profile2}
+                                alt="Coding setup"
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
+                        </div>
+
+                        {/* Top Row Right */}
+                        <div className="glass-card rounded-2xl relative overflow-hidden group">
+                            <Image
+                                src={Profile3}
+                                alt="Conference talk"
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
+                        <div className="glass-card rounded-2xl relative overflow-hidden group">
+                            <Image
+                                src={Profile4}
+                                alt="Team meeting"
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
+
+                        {/* Bottom Row Right */}
+                        <div className="glass-card rounded-2xl relative overflow-hidden group">
+                            <Image
+                                src={Profile5}
+                                alt="Travel shot"
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
+                        <div className="glass-card rounded-2xl relative overflow-hidden group">
+                            <Image
+                                src={Profile6}
+                                alt="Hobby shot"
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                        </div>
                     </div>
                 </Section>
             </div>
