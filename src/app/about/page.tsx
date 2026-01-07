@@ -78,7 +78,7 @@ const AboutPage = () => {
                                 src={Profile2}
                                 alt="Coding setup"
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
                         </div>
@@ -89,7 +89,7 @@ const AboutPage = () => {
                                 src={Profile3}
                                 alt="Conference talk"
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
                         <div className="glass-card rounded-2xl relative overflow-hidden group">
@@ -97,7 +97,7 @@ const AboutPage = () => {
                                 src={Profile4}
                                 alt="Team meeting"
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
 
@@ -107,7 +107,7 @@ const AboutPage = () => {
                                 src={Profile5}
                                 alt="Travel shot"
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
                         <div className="glass-card rounded-2xl relative overflow-hidden group">
@@ -115,7 +115,7 @@ const AboutPage = () => {
                                 src={Profile6}
                                 alt="Hobby shot"
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
                     </div>
