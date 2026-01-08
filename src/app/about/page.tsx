@@ -5,7 +5,7 @@ import Section from '@/components/Section';
 import Image from 'next/image';
 import HeroImage from '../../../public/images/profile1.jpeg';
 import Profile2 from '../../../public/images/profile3.jpeg';
-import Profile3 from '../../../public/images/profile2.jpeg';
+import Profile3 from '../../../public/images/profile7.jpeg';
 import Profile4 from '../../../public/images/profile4.jpeg';
 import Profile5 from '../../../public/images/profile5.jpeg';
 import Profile6 from '../../../public/images/profile6.jpeg';
